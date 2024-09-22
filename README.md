@@ -1,2 +1,4 @@
 # ds_module_22_Home_Sales
 In this challenge, you'll use your knowledge of SparkSQL to determine key metrics about home sales data. Then you'll use Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
+
+Starting with the provided code and utilizing Google Colab, I imported Spark and PySpark. I read in the DataFrame and created a temporary DataFrame. Following the code instructions, I ran several spark.sql queries and even timed some of them. After caching the temporary table, I then re-ran one of the queries and timed it. Then, I created a partition on the field "date_built" using Parquet. After that, I created a new temporary table from the Parquet partition and re-ran the same query, which completed in less than half the time.
